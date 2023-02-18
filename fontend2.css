@@ -1,0 +1,268 @@
+
+
+@media (min-width:640px) {
+    *{
+        margin: 0;
+        font-style: inter;
+    }
+    .grid-container{
+        display: grid;
+        background-color: black;
+        height: 100vh;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+        gap: 20px;
+        padding:20px;
+    }
+    .item{
+        background-color: burlywood;
+        border: 2px solid white;
+        border-radius: 12px;
+    }
+    .box1{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: black;
+        border: 2px solid #808080;
+        padding-left: 20px ;
+        padding: 30px;
+        border-radius: 14px;
+        font-size: 20px;
+        font-weight: 200;
+        color: #FFFFFF;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .box2{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20PX;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        color: white;
+        flex-direction: column;
+        border-radius: 14px;
+        border: 1px solid #808080;
+    }
+    .box2 > img{
+        width: 100px;
+        height: 100px;
+        border-radius: 60px; 
+        padding: 10px;
+    }
+    
+    .box3{
+        display: flex;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        color: white;
+        background-color: black;
+        align-items: center;
+        border: 2px solid white;
+        justify-items: flex-start;
+        border-radius: 12px ;
+        padding: 10px;
+        padding-left: 0px;
+        border: 2px solid #808080;
+
+    
+    }
+    ul{
+        line-height: 2em;
+        float: left;
+        
+    }
+    .box4{
+        margin-top: 10px;
+        padding-left: 20px;
+        line-height: 2em;
+        float: left;
+        display:flex;
+        flex-direction: column;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: black;
+        color:#808080;
+        font-weight: 200;
+;
+    
+    }
+    .box4 >a {
+        text-decoration: none;
+        display: flex;
+        flex-flow:  row wrap;
+        align-items: center;
+        column-gap: 10px;
+        color:#808080;
+    }
+    .box5{
+        display: flex;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        flex-flow: column wrap;
+        flex-wrap: wrap;
+        color: #808080;
+        background-color: black;
+        padding-left:15px;
+        align-content: flex-start;
+    }
+    .rocktable > table{
+        
+        
+        
+    }
+    table,td,th{
+        table-layout: auto;
+        border: 1px solid #808080;
+        border-collapse: collapse;
+        padding: 7px;
+        margin-top: 10px;
+        border-radius: 15px;
+        text-align: center;
+        
+    }
+}
+
+@media (min-width: 0px){
+    *{
+        margin: 0;
+    }
+    .grid-container{
+        display: grid;
+        background-color: black;
+        height: 100vh;
+        gap:10px;
+       
+    }
+    .item{
+       
+        border: 2px solid white;
+        border-radius: 2px;
+    }
+    .box1{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 100;
+        padding: 10px;
+        background-color: black;
+        border: 2px solid #808080;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 20px;
+
+    }
+    .box2{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+        color: white;
+        flex-direction: column;
+    }
+    .box2 > img{
+        width: 100px;
+        height: 100px;
+        border-radius: 60px; 
+        padding: 10px;
+    }
+    
+    .box3{
+        display: flex;
+      
+        color: white;
+        background-color: black;
+        align-items: center;
+        border: 2px solid white;
+        justify-items: flex-start;
+        border-radius: 12px ;
+        padding: 10px;
+        padding-left: 0px;
+
+    
+    }
+    ul{
+        line-height: 2em;
+        float: left;
+        
+    }
+    .box4{
+        margin-top: 10px;
+        padding-left: 20px;
+        line-height: 2em;
+        float: left;
+        display:flex;
+        flex-direction: column;
+        
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: black;
+        color:#808080;
+        font-weight: 200;
+;
+    
+    }
+    .box4 >a {
+        text-decoration: none;
+        display: flex;
+        flex-flow:  row wrap;
+        align-items: center;
+        column-gap: 10px;
+        color:#808080;
+    }
+    .box5{
+        display: flex;
+       
+        flex-flow: column wrap;
+        flex-wrap: wrap;
+        color: #808080;
+        background-color: black;
+        padding-left:15px;
+        align-content: flex-start;
+
+
+    }
+    .rocktable > table{
+        
+        
+        
+    }
+    table,td,th{
+        table-layout: auto;
+        border: 1px solid #808080;
+        border-collapse: collapse;
+        padding: 7px;
+        margin-top: 10px;
+        border-radius: 15px;
+        text-align: center;
+    }
+   
+    
+      
+   
+      
+      
+      
+}
+       
+
+
+    
